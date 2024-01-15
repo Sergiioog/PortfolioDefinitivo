@@ -1,10 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
-		<p class="">Hola</p>
-	</div>
+	<main class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+		<Header />
+		<section class=" h-auto w-full flex justify-center items-center flex-col 
+		mt-5">
+			<figure class="bg-red-300 h-60 w-60 flex justify-center items-center 
+			overflow-hidden rounded-full bg-transparent border border-slate-100 ">
+				<img src="assets/sergio.png" alt="Foto Sergio" class="max-w-full object-cover">
+			</figure>
+			<div class=" mt-2 w-full h-auto flex justify-center items-center
+			flex-col">
+				<h1 class="text-white text-3xl">Sergio García</h1>
+				<h2 class="text-white text-2xl">Desarrollador Web</h2>
+				<div class="w-full h-auto flex justify-center items-center gap-3 mt-2">
+					<button>PRUEBA</button>
+					<button>PRUEBA</button>
+					<button>PRUEBA</button>
+				</div>
+			</div>
+		</section>
+	</main>
 </Layout>
 
