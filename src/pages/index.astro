@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+	<main class=" top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
 		<Header />
 		<section class=" h-auto w-full flex justify-center items-center flex-col 
 		mt-5">
@@ -16,13 +17,29 @@ import Header from '../components/Header.astro';
 			flex-col">
 				<h1 class="text-white text-3xl">Sergio García</h1>
 				<h2 class="text-white text-2xl">Desarrollador Web</h2>
-				<div class="w-full h-auto flex justify-center items-center gap-3 mt-2">
-					<button>PRUEBA</button>
-					<button>PRUEBA</button>
-					<button>PRUEBA</button>
-				</div>
+				<div class="w-full h-auto flex justify-center items-center flex-wrap gap-3 mt-2">
+					<button class="bg-opacity-50 bg-gray-800 shadow-lg backdrop-blur-9 border-opacity-18 rounded-10 w-auto p-1 rounded-lg
+									transition-transform transform hover:scale-105 cursor-pointer">
+					  <a href="https://twitter.com">GITHUB</a>
+					</button>
+				  
+					<button class="bg-opacity-50 bg-gray-800 shadow-lg backdrop-blur-9 border-opacity-18 rounded-10 w-auto p-1 rounded-lg
+									transition-transform transform hover:scale-105 cursor-pointer">
+					  <a href="https://linkedin.com">LINKEDIN</a>
+					</button>
+				  
+					<button class="bg-opacity-50 bg-gray-800 text-slate-400 shadow-lg backdrop-blur-9 border-opacity-18 rounded-10 w-auto p-1 rounded-lg
+									transition-transform transform hover:scale-105 cursor-pointer">
+					  <a href="https://gmail.com" class="btn-link-no-underline">GMAIL</a>
+					</button>
+				  </div>
+				  
+				  
 			</div>
 		</section>
 	</main>
 </Layout>
+<style>
+	
 
+</style>
