@@ -42,16 +42,32 @@ import Briefcase from '../components/icons/Briefcase.astro';
 			</div>
 		</section>
 		<SectionContainer id="experiencia">
-			<h2
-			  class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-			>
-			  <Briefcase class="size-7" />
-			  About me
-			</h2>
-		  </SectionContainer>
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"><Briefcase class="size-7" />About me</h2>
+			<div class="h-auto w-4/5 flex items-center justify-center flex-col">
+				<p class="text-white/80 text-lg text-justify">¡Hola! Mi nombre es Sergio García, tengo 19 años y actualmente estoy estudiando un Ciclo Formativo de Grado Superior
+					(CFGS) de Desarrollo de Aplicaciones Web en la U-Tad (Universidad de Tecnología y Arte Digital), adscrita a la Universidad Camilo José Cela. <br><br>
+					Desde pequeño me ha gustado el mundo de la tecnología, los ordenadores y la programación. Actualmente estoy familiarizándome con 
+					lenguajes de programacion cómo Java, JavaScript o Angular aunque trabajo constantemente para seguir mejorando.
+					<br><br>
+					Entre mis aptitudes considero que soy una persona trabajadora y curiosa, a la que le gusta aprender y mejorar en cuálquier ámbito
+					de su vida.</p>
+					<figure class="mt-10 h-full w-full flex justify-center items-center ">
+						<img src="assets/sergioilus.png" alt="Foto de Sergio" id="sergioilus">
+					</figure>
+			</div>
+		</SectionContainer>
+		<SectionContainer>
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 mt-0 items-center text-black/80 dark:text-white/80"><Briefcase class="size-7" />Tech Stack</h2>
+			<div class="h-auto w-4/5  grid grid-cols-2">
+				
+			</div>
+		</SectionContainer>
 	</main>
 </Layout>
 <style>
 	
-
+	#sergioilus {
+        max-width: 80%;
+        max-height: 80%;
+    }
 </style>
