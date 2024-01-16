@@ -5,12 +5,14 @@ import SocialPill from '../components/SocialPill.astro';
 import LinkedIn from '../components/icons/LinkedIn.astro';
 import GitHub from '../components/icons/GitHub.astro';
 import Mail from '../components/icons/Mail.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
 
 
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class=" top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+	<main class=" top-0 z-[-2] h-auto w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
 		<Header />
 		<section class=" h-auto w-full flex justify-center items-center flex-col 
 		mt-5">
@@ -39,9 +41,14 @@ import Mail from '../components/icons/Mail.astro';
 				  </div> 
 			</div>
 		</section>
-		<section class=" h-auto w-full flex justify-center items-center flex-col mt-5">
-			
-		</section>
+		<SectionContainer id="experiencia">
+			<h2
+			  class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+			>
+			  <Briefcase class="size-7" />
+			  About me
+			</h2>
+		  </SectionContainer>
 	</main>
 </Layout>
 <style>
